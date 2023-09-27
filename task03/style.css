@@ -1,0 +1,44 @@
+@media (min-width: 767px) and (max-width: 1024px) {
+
+  body{
+    margin: 0;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+    nav {
+      height: 10vh;
+      background-color: rgba(10, 132, 255, 1);
+      max-width: 50%;
+    }
+  
+    footer {
+      height: 10vh;
+      background-color: red;
+    }
+  
+    section:first-of-type {
+      height: 24vh;
+      background-color: greenyellow;
+    }
+  
+    section:last-of-type {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      width: 100%;
+    }
+
+    .art1 {
+      height: 20vh;
+      background-color: yellow;
+    }
+    .art2 {
+      height: 20vh;
+      background-color: purple;
+    }
+  }
+  
