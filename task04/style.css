@@ -1,11 +1,14 @@
 @media (min-width: 1024px){
 
-  body {
+  body{
+    margin: 0;
+    overflow: none;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
+    height: 100vh;
   }
-  
+
     nav {
       height: 10vh;
       background-color: rgba(10, 132, 255, 1);
@@ -18,33 +21,28 @@
     }
   
     section:first-of-type {
-      height: 22vh;
-      max-width: 100vw;
+      height: 24vh;
       background-color: greenyellow;
     }
   
     section:last-of-type {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      max-width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 100%;
     }
 
-    section :nth-child(1), section :nth-child(2){
-      height: 23vh;
-      width: 32vw;
+    .art1 {
+      height: 20vh;
       background-color: yellow;
     }
-
-    section :nth-child(3), section :nth-child(4){
-      height: 23vh;
-      width: 32vw;
+    .art2 {
+      height: 20vh;
       background-color: purple;
     }
-    
-    section :nth-child(5), section :nth-child(6){
-      height: 23vh;
-      width: 32vw;
+
+    .art3 {
+      height: 20vh;
       background-color: pink;
     }
   }
